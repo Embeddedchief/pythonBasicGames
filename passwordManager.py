@@ -16,7 +16,13 @@ def add():
     password = input("Kindly input password for the account ")
 
     with open('passwordManager.txt', 'a') as f:
-        f.write("username: " + str(username) + "\n" + "password: " + str(password) + "\n\n")
+        f.write("username: \n" + str(username) + "\n" + "password: " + str(password) + "\n")
+
+#Create function for view
+def view():
+    with open('passwordManager.txt', 'r') as f:
+        for line in f.readlines():
+            print(line)
 
 
 #Ask for master password
@@ -34,6 +40,9 @@ while True:
     if answer == 'add':
         add()
     elif answer == 'view':
-        pass
-    else:
+        view()
+    elif answer == 'q':
         quit()
+    else:
+        print("Kindly type the right input")
+        continue
