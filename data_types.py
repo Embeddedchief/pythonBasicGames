@@ -52,3 +52,21 @@ print(math.pi)
 print(math.sqrt(7))
 print(math.ceil(gpa))
 print(math.floor(gpa))
+print("\n")
+
+
+student_names = ["Isreal", "Isaiah", "Choi"]
+print(student_names[0])
+print(student_names.index("Choi"))
+print(len(student_names))
+student_names.append("Jeremiah")
+print(student_names)
+print(len(student_names))
+student_names += ["Prayer"]
+print(student_names)
+print("\n")
+student_names.extend(["Halleluyah", "Amina"])
+print(student_names)
+student_names.insert(0, "Steven")
+print("\n")
+print(student_names)
