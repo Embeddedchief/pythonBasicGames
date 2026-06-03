@@ -40,3 +40,15 @@ print(isinstance(best_price, str))
 print("\n")
 
 gpa = 3.45
+distinction = 4.5
+print(type(gpa))
+print(type(distinction))
+print(type(distinction) == type(gpa))
+print("\n")
+
+import math
+
+print(math.pi)
+print(math.sqrt(7))
+print(math.ceil(gpa))
+print(math.floor(gpa))
