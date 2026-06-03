@@ -27,3 +27,16 @@ print(title.center(16, "="))
 print("Cofee".ljust(14, ".") + "$2")
 print("Tea".ljust(16, ".") + "$2")
 print("Milk".ljust(15, ".") + "$3")
+print("\n")
+
+print(title.endswith("U"))
+print(title.startswith("f"))
+print("\n")
+
+price = 100
+best_price = 80
+print(type(price))
+print(isinstance(best_price, str))
+print("\n")
+
+gpa = 3.45
